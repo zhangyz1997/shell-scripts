@@ -632,7 +632,6 @@ start_service() {
 	fi
 
 	if [ "$?" != "0" ] || ! is_running; then
-		do_uninstall
 		cat >&2 <<-EOF
 		很遗憾，服务启动失败。
 		你可以查看上面的日志来获取原因，
